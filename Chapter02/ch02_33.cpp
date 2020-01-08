@@ -5,18 +5,18 @@
 
 int main() {
     int i = 0, &r = i;
-    auto a = r;     // a -- integer
+    auto a = r;     // a -- int
     const int ci = i, &cr = ci;
-    auto b = ci;    // b -- integer
-    auto c = cr;    // c -- integer
-    auto d = &i;    // d -- integer pointer
-    auto e = &ci;   // e -- const integer pointer
-    const auto f = ci;  // f -- const integer
-    auto &g = ci;   // g -- const integer reference
+    auto b = ci;    // b -- int
+    auto c = cr;    // c -- int
+    auto d = &i;    // d -- int pointer
+    auto e = &ci;   // e -- const int pointer
+    const auto f = ci;  // f -- const int
+    auto &g = ci;   // g -- const int reference
     // auto &h = 42 Error
-    const auto &j = 42; // j -- const integer reference
-    auto k = ci, &l = i;    // k -- integer, l -- integer refrence;
-    auto &m = ci, *p = &ci; // m -- integer reference, p -- integer pointer
+    const auto &j = 42; // j -- const int reference
+    auto k = ci, &l = i;    // k -- int, l -- int refrence;
+    auto &m = ci, *p = &ci; // m -- int reference, p -- int pointer
     
     a = 42;
     std::cout << "a = " << a << std::endl;
