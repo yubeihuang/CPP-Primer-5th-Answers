@@ -1,4 +1,4 @@
-// Author: Yubei Huang
+// Exercise 2.3
 // Date: 2020-01-08
 
 #include <iostream>
